@@ -1,3 +1,9 @@
+questions_and_answers = {
+    "Как дела?": "Хорошо!",
+    "Что делаешь?": "Программирую",
+    "Сколько время?": "Я не знаю...",
+    "Куда пойдем?": "В кино"
+}
 """
 
 Домашнее задание №1
@@ -14,14 +20,18 @@
     Программа: Программирую
     
 """
-
-questions_and_answers = {}
-
 def ask_user(answers_dict):
-    """
-    Замените pass на ваш код
-    """
-    pass
-    
+    while True:
+        request = input("Какой у вас вопрос?: ").strip()
+        if request in answers_dict:
+            print(answers_dict.get(request))
+        else:
+            print("Я не знаю ответа на такие вопросы!")
+            break
+
 if __name__ == "__main__":
     ask_user(questions_and_answers)
+
+
+
+

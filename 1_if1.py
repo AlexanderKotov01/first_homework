@@ -33,6 +33,5 @@ def main(age):
     else:
         print ("Сладкие времена закончились, работайте! ")     
     
-
 if __name__ == "__main__":
     main(age)

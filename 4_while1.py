@@ -8,14 +8,13 @@
   пользователя “Как дела?”, пока он не ответит “Хорошо”
    
 """
+whats_up = input("Как дела? ")
 
+def hello_user(whats_up):
+    whats_up.lower()
+    whats_up.capitalize() 
+    while whats_up != "Хорошо":
+        print ("Как дела? ")
 
-def hello_user():
-    """
-    Замените pass на ваш код
-    """
-    pass
-
-    
 if __name__ == "__main__":
-    hello_user()
+    hello_user(whats_up)
