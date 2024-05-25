@@ -11,10 +11,8 @@
 whats_up = input("Как дела? ")
 
 def hello_user(whats_up):
-    whats_up.lower()
-    whats_up.capitalize() 
-    while whats_up != "Хорошо":
-        print ("Как дела? ")
+    while whats_up.lower().capitalize() != "Хорошо":
+      whats_up = input("Как дела? ")
 
 if __name__ == "__main__":
     hello_user(whats_up)

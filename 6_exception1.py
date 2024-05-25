@@ -9,12 +9,16 @@
   и завершала работу при помощи оператора break
     
 """
+whats_up = input("Как дела? ")
 
-def hello_user():
-    """
-    Замените pass на ваш код
-    """
-    pass
-    
+def hello_user(whats_up):
+    try:
+       while whats_up.lower().capitalize() != "Хорошо":
+          whats_up = input("Как дела? ")
+          break
+    except KeyboardInterrupt:
+         print ('Пока! ')
+  
 if __name__ == "__main__":
-    hello_user()
+    hello_user(whats_up) 
+   

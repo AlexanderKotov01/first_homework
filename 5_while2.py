@@ -21,13 +21,9 @@ questions_and_answers = {
     
 """
 def ask_user(answers_dict):
-    while True:
-        request = input("Какой у вас вопрос?: ").strip()
-        if request in answers_dict:
-            print(answers_dict.get(request))
-        else:
-            print("Я не знаю ответа на такие вопросы!")
-            break
+    while whats_up.lower().capitalize() != "Хорошо":
+      whats_up = input("Как дела? ")
+      break
 
 if __name__ == "__main__":
     ask_user(questions_and_answers)
