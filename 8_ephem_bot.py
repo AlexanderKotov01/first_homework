@@ -48,7 +48,7 @@ def planet_choice(update, context):
     user_input = update.message.text.split()
     
     if len(user_input) < 2:
-        update.message.reply_text("Пожалуйста, предоставьте наименование планеты")
+        update.message.reply_text("Пожалуйста, предоставьте наименование планеты, про которую хотите узнать")
         return
     
     # Получаем название планеты из команды
