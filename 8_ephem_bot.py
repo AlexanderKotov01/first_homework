@@ -65,7 +65,7 @@ def planet_choice(update, context):
         # Формируем ответное сообщение
         response = f"Планета {planet_name} сейчас находится в созвездии {constellation[1]}. RA: {planet.ra}, Dec: {planet.dec}"
     except AttributeError:
-        response = f"Планеты под названием {planet_name} не существует!"
+        response = f"Планеты под названием {planet_name} не существует, вас обманули!"
 
     update.message.reply_text(response)
 
